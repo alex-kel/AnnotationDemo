@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import ru.kpfu.itis.model.AnnotatedCase;
 import ru.kpfu.itis.service.IAnnotationService;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -49,7 +50,7 @@ public class FileBasedAnnotationService implements IAnnotationService {
     }
 
     private String getTextFromInputStream(String fileName) throws IOException {
-        Path path = Paths.get(filesPath + fileName);
+        Path path = Paths.get(filesPath + File.separator + fileName);
         InputStream inputStream = new FileInputStream(path.toFile());
         String text = IOUtils.toString(inputStream, "UTF-8");
         inputStream.close();

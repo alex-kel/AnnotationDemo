@@ -6,7 +6,6 @@ import ru.kpfu.itis.model.AnnotatedCase;
 import ru.kpfu.itis.service.IAnnotationService;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

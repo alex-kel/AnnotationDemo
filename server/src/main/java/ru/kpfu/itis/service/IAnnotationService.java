@@ -2,7 +2,6 @@ package ru.kpfu.itis.service;
 
 import ru.kpfu.itis.model.AnnotatedCase;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
