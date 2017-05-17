@@ -45,7 +45,7 @@ public class FileBasedAnnotationService implements IAnnotationService {
     public AnnotatedCase getAnnotatedCaseByName(String caseName) throws IOException {
         String text = getTextFromInputStream(caseName + ".txt");
         String annotationsText = getTextFromInputStream(caseName + ".ann");
-        AnnotatedCase annotatedCase = new AnnotatedCase(text, annotationsText);
+        AnnotatedCase annotatedCase = new AnnotatedCase(caseName, text, annotationsText);
         return annotatedCase;
     }
 

@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <label>Выберите размеченный документ</label>
+  <select name="selector" class="form-control" [(ngModel)]="selectedValue" (change)="onChange()">
+    <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+  </select>
+  <br>
+  <app-text [annotatedCase]="annotatedCase"></app-text>
+</div>

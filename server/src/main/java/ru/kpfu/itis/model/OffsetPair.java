@@ -1,10 +1,16 @@
 package ru.kpfu.itis.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * Created by Alex on 17.05.17.
  */
 public class OffsetPair {
+
+    @JsonProperty("start")
     private long start;
+
+    @JsonProperty("end")
     private long end;
 
     public OffsetPair(long start, long end) {

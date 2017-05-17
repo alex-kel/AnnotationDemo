@@ -1,0 +1,17 @@
+<div class="table-responsive">
+  <table class="table table-striped table-hover">
+    <thead>
+    <tr>
+      <th>Тип</th>
+      <th>Текст</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let annotation of annotatedCase.annotations" id="{{annotation.id}}" (click)="annotationClicked(annotation.id)">
+      <td>{{ annotation.type }}</td>
+      <td>{{ annotation.text }}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

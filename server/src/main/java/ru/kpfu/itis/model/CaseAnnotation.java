@@ -1,5 +1,7 @@
 package ru.kpfu.itis.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,9 +10,16 @@ import java.util.List;
  */
 public class CaseAnnotation {
 
+    @JsonProperty("id")
     private String id;
+
+    @JsonProperty("type")
     private String type;
+
+    @JsonProperty("offsets")
     private List<OffsetPair> offsets;
+
+    @JsonProperty("text")
     private String annotatedText;
 
     public CaseAnnotation() {
