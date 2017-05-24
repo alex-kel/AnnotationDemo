@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {AnnotatedCaseService} from '../annotated-case.service';
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import {AnnotatedCase} from '../annotated-case';
+import 'rxjs/add/operator/switchMap';
+
 
 @Component({
   selector: 'app-iframe',
