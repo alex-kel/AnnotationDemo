@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row" *ngIf="annotatedCase">
+    <div class="col-md-7">
+      <h2 class=".h2">{{ annotatedCase.id }}</h2>
+      <p id="casetext" [innerHTML]="annotatedCase.text">Loading...</p>
+    </div>
+    <div class="col-md-5">
+      <app-annotation [annotatedCase]="annotatedCase"></app-annotation>
+    </div>
+  </div>
+</div>
