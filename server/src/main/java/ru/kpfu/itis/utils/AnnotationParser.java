@@ -26,6 +26,7 @@ public class AnnotationParser {
                 if (i == 1) {
                     String[] typeAndOffsets = annotationField.split(" ", 2);
                     caseAnnotation.setType(typeAndOffsets[0]);
+                    caseAnnotation.setTypeRu(Translator.getRuType(typeAndOffsets[0]));
                     String[] offsets = typeAndOffsets[1].split(";");
                     for (String offset : offsets) {
                         String[] offsetValues = offset.split(" ");

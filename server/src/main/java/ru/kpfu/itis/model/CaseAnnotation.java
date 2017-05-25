@@ -16,6 +16,9 @@ public class CaseAnnotation {
     @JsonProperty("type")
     private String type;
 
+    @JsonProperty("typeRu")
+    private String typeRu;
+
     @JsonProperty("offsets")
     private List<OffsetPair> offsets;
 
@@ -56,5 +59,13 @@ public class CaseAnnotation {
 
     public void setAnnotatedText(String annotatedText) {
         this.annotatedText = annotatedText;
+    }
+
+    public String getTypeRu() {
+        return typeRu;
+    }
+
+    public void setTypeRu(String typeRu) {
+        this.typeRu = typeRu;
     }
 }

@@ -8,7 +8,7 @@
     </thead>
     <tbody>
     <tr *ngFor="let annotation of annotatedCase.annotations" id="{{annotation.id}}" (click)="annotationClicked(annotation.id)">
-      <td>{{ annotation.type }}</td>
+      <td>{{ annotation.typeRu }}</td>
       <td>{{ annotation.text }}</td>
     </tr>
     </tbody>

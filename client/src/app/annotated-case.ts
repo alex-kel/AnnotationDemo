@@ -10,6 +10,7 @@ export class AnnotatedCase {
 export class Annotation {
   id: string;
   type: string;
+  typeRu: string;
   offsets: Offset[];
   text: string;
 }
